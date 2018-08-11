@@ -1,0 +1,28 @@
+/* pages/index/index.wxss */
+page{
+  background: #14d9ea
+
+}
+.view-wrapper{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center
+}
+.icon-header{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  margin: 100rpx 0 
+}
+.title{
+  font-family: bold;
+  font-size: 40rpx;
+  color: springgreen;
+  margin: 100rpx 0 ;
+  background: #5599cc;
+  
+}
+.description{
+  border: 1rpx solid #f99fda;
+ 
+}

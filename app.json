@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/newsDetail/newsDetail",
+    "pages/index/index",
+    "pages/movie/movie",
+    "pages/movieDetail/movieDetail"
+  ],
+  "window": {
+    "navigationBarTitleText": "SmilePro",
+    "navigationBarBackgroundColor": "#14d9ea",
+    "navigationStyle": "#fffaaa"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "News",
+        "iconPath": "/images/tab/yuedu.png",
+        "selectedIconPath": "/images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "电影频道",
+        "iconPath": "/images/tab/dianying.png",
+        "selectedIconPath": "/images/tab/dianying_hl.png"
+      }
+    ]
+  }
+}

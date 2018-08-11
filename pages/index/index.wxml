@@ -1,0 +1,11 @@
+<!--pages/index/index.wxml-->
+<view class='view-wrapper'>
+  <image src='{{user.avatarUrl}}' alt='hello' class='icon-header'></image>
+	<button style='display: {{isShow?"block": "none"}}' open-type='getUserInfo' bindgetuserinfo='handleGetUserInfo'>获取用户登录信息</button>
+  <text class='title'>
+      Hello {{user.nickName}}
+  </text>
+  <text class='description' catchtap='goToList' >
+    toList
+  </text>
+</view>

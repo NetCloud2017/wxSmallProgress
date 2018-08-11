@@ -1,0 +1,24 @@
+
+<!--pages/detail/detail.wxml-->
+<view class='detailContainer'>
+	<image class='headImg' src='{{isPlay?newsDetail.music.coverImgUrl:newsDetail.detail_img }}'></image>
+  <image catchtap='playMusic' class='musicImg' src='{{isPlay? "/images/music/music-start.png":"/images/music/music-stop.png"}}'></image>
+	<view class='avatar_date'>
+		<image src='{{newsDetail.avatar}}'></image>
+		<text>{{newsDetail.author}}</text>
+		<text>发布于</text>
+		<text>{{newsDetail.date}}</text>
+	</view>
+	<text class='company'>{{newsDetail.title}}</text>
+	<view class='collection_share_container'>
+		<view class='collection_share'>
+			<image catchtap='collection' wx:if='{{!isCollected}}' src='/images/icon/collection-anti.png'></image>
+			<image catchtap='collection' wx:if='{{isCollected}}' src='/images/icon/collection.png'></image>
+			<image catchtap='shareTo' src='/images/icon/share.png'></image>
+		</view>
+		<view class='line'></view>
+	</view>
+  <!--open-type ='share' 出来的样式是系统自带的  -->
+	<button open-type='share'>转发此文章</button>
+	<text class='content'>{{newsDetail.detail_content}}</text>
+</view>

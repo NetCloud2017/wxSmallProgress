@@ -4,26 +4,35 @@
     "pages/newsDetail/newsDetail",
     "pages/index/index",
     "pages/movie/movie",
-    "pages/movieDetail/movieDetail"
+    "pages/movieDetail/movieDetail",
+    "pages/drinks/drinks",
+    "pages/myOrder/myOrder"
   ],
   "window": {
     "navigationBarTitleText": "SmilePro",
-    "navigationBarBackgroundColor": "#14d9ea",
-    "navigationStyle": "#fffaaa"
+    "navigationBarBackgroundColor": "#14d9ea"
   },
   "tabBar": {
     "list": [
       {
         "pagePath": "pages/list/list",
-        "text": "News",
+        "text": "热买",
         "iconPath": "/images/tab/yuedu.png",
         "selectedIconPath": "/images/tab/yuedu_hl.png"
       },
       {
         "pagePath": "pages/movie/movie",
-        "text": "电影频道",
+        "text": "新品上市",
         "iconPath": "/images/tab/dianying.png",
         "selectedIconPath": "/images/tab/dianying_hl.png"
+      },
+      {
+        "pagePath": "pages/drinks/drinks",
+        "text": "饮料"
+      },
+      {
+        "pagePath": "pages/myOrder/myOrder",
+        "text": "我的订单"
       }
     ]
   }
